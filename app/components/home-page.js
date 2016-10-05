@@ -5,5 +5,11 @@ import testArray from './../util/test-cases';
 console.log(testArray);
 
 export default Ember.Component.extend({
+  //need to set a property equal to the array here for the values to appear on the page
   testArray: testArray,
+  actions: {
+    runTests(){
+      testArray.run();
+    }
+  }
 });

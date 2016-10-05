@@ -6,6 +6,7 @@ function generateDummyTest() {
     setTimeout(function() {
       callback(testPassed)
     }, delay)
+    console.log(testPassed);
   }
 }
 
