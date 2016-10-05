@@ -1,6 +1,6 @@
 # Billy-test-assignment
 
-This 
+This is a code challenge for Billy. The objective was to create a test runner that runs automated tests in the browser and reports on their results as soon as each test completes.
 
 ## Prerequisites
 
