@@ -9,7 +9,10 @@ export default Ember.Component.extend({
   testArray: testArray,
   actions: {
     runTests(){
-      testArray.run();
+      testArray.forEach(function(item){
+        console.log(item);
+        item.run();
+      });
     }
   }
 });
