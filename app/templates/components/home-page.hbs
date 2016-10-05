@@ -1,1 +1,10 @@
 {{yield}}
+
+
+<ul>
+  {{#each testArray as |test|}}
+    <li>{{test.description}}</li>
+  {{/each}}
+</ul>
+
+<button class="startButton"{{action 'runTests'}}>Start</button>
