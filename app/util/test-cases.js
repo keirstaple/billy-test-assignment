@@ -4,6 +4,7 @@ function generateDummyTest() {
 
   return function(callback) {
     setTimeout(function() {
+      //when I hit the start button and the generateDummyTest function is called, it returns 'callback is not a function' six times after the delay
       callback(testPassed)
     }, delay)
   }

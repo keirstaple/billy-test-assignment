@@ -7,11 +7,15 @@ console.log(testArray);
 export default Ember.Component.extend({
   //need to set a property equal to the array here for the values to appear on the page
   testArray: testArray,
+
   actions: {
-    runTests(){
-      testArray.forEach(function(item){
-        console.log(item);
-        item.run();
+    //pressing start button triggers the runTests method
+    startTests(){
+      //loops through testArray
+      testArray.forEach(function(test){
+        console.log(test);
+        //triggers run from the array
+        test.run();
       });
     }
   }
