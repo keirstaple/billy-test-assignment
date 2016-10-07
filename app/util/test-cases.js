@@ -1,13 +1,13 @@
 function generateDummyTest() {
-  let delay = 7000 + Math.random() * 7000
-  let testPassed = Math.random() > 0.5
+  let delay = 7000 + Math.random() * 7000;
+  let testPassed = Math.random() > 0.5;
 
   return function(callback) {
     setTimeout(function() {
       //when I hit the start button and the generateDummyTest function is called, it returns 'callback is not a function' six times after the delay
-      callback(testPassed)
-    }, delay)
-  }
+      callback(testPassed);
+    }, delay);
+  };
 }
 
 export default [
@@ -17,4 +17,4 @@ export default [
   { description: "stealing underpants... profit!",    run: generateDummyTest() },
   { description: "numbers are adequately waterproof", run: generateDummyTest() },
   { description: "payment methods can do yoga",       run: generateDummyTest() }
-]
+];
