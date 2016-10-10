@@ -1,12 +1,14 @@
 function generateDummyTest() {
   let delay = 7000 + Math.random() * 7000;
   let testPassed = Math.random() > 0.5;
+  //define callback as a function
   function callback(x) {
     return x;
   }
 
   return function() {
     setTimeout(function(){
+      //check to make sure callback has type function
       if (typeof callback === "function") {
         callback(testPassed);
         console.log('success');
