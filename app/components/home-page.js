@@ -13,7 +13,6 @@ export default Ember.Component.extend({
     startTests(){
       //loops through testArray
       testArray.forEach(function(test){
-        console.log(test);
         //triggers run from the array
         test.run();
       });

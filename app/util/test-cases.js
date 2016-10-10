@@ -1,11 +1,18 @@
 function generateDummyTest() {
   let delay = 7000 + Math.random() * 7000;
   let testPassed = Math.random() > 0.5;
+  function callback(x) {
+    return x;
+  }
 
-  return function(callback) {
-    setTimeout(function() {
-      //when I hit the start button and the generateDummyTest function is called, it returns 'callback is not a function' six times after the delay
-      callback(testPassed);
+  return function() {
+    setTimeout(function(){
+      if (typeof callback === "function") {
+        callback(testPassed);
+        console.log('success');
+      } else {
+        console.log('no success');
+      }
     }, delay);
   };
 }
