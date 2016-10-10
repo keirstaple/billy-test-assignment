@@ -12,7 +12,7 @@ function generateDummyTest() {
       //check to make sure callback has type function
       if (typeof callback === "function") {
         callback(testPassed);
-        console.log('success');
+        console.log(callback(testPassed));
       } else {
         console.log('no success');
       }

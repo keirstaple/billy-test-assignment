@@ -17,5 +17,6 @@ export default Ember.Component.extend({
         test.run();
       });
     }
+
   }
 });
