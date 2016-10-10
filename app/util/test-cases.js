@@ -7,6 +7,7 @@ function generateDummyTest() {
   }
 
   return function() {
+    //setTimeout takes parameters function (what function to execute) and delay (delay until function executes)
     setTimeout(function(){
       //check to make sure callback has type function
       if (typeof callback === "function") {
